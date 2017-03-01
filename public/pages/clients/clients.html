@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../images/example.ico">
+
+    <title>Clients</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../styles/starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!-- reloads the page, href="" -->
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="">Clients</a></li>
+                <!-- # - empty href value, adds an extra entry to the browser history  -->
+                <li><a href="../products/products.html">Products</a></li>
+                <li><a href="../orders/orders.html">Orders</a></li>
+                <li><a href="../orders/purchase.html">Purchase</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="starter-template">
+        <p class="lead"> Clients </p>
+        <button id="client_add" type="button" class="btn btn-primary" onclick="addClient()">Add a new client</button>
+    </div>
+    <table id="clients_table_results" class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th data-field="clientSecurityId">Security ID</th>
+            <th data-field="clientFirstName">First Name</th>
+            <th data-field="clientLastName">Last Name</th>
+            <th data-field="clientPhoneNumber">Phone Number</th>
+            <th data-field="clientCountry">Country</th>
+            <th data-field="clientStreetAddress">Street Address</th>
+            <th data-field="actions">Actions</th>
+        </tr>
+        </thead>
+    </table>
+</div><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../webjars/jquery/2.2.4/jquery.min.js"></script>
+<script src="../../webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="../../js/clients/clients.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+</body>
+</html>

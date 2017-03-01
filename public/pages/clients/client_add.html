@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../images/example.ico">
+
+    <title>Clients Add</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../styles/starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!-- reloads the page, href="" -->
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <!-- # - empty href value, adds an extra entry to the browser history  -->
+                <li><a href="../products/products.html">Products</a></li>
+                <li><a href="../orders/orders.html">Orders</a></li>
+                <li><a href="../orders/purchase.html">Purchase</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="starter-template">
+        <p id="clientInfo" class="lead">Add a new client</p>
+    </div>
+    <form id="client_form" name="client_edit_name" class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="clientFirstName" id="clientFirstName"
+                       required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Last Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="clientLastName" id="clientLastName"
+                       required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Phone Number:</label>
+            <div class="col-sm-10">
+                <!-- tel type is not supported in some browsers -->
+                <input type="number" step="1" class="form-control" name="clientPhoneNumber"
+                       id="clientPhoneNumber" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Country</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="clientCountry" id="clientCountry"
+                        required>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Street Address</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="clientStreetAddress"
+                       id="clientStreetAddress" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</div><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../webjars/jquery/2.2.4/jquery.min.js"></script>
+<script src="../../webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="../../js/clients/client_add.js"></script>
+</body>
+</html>
