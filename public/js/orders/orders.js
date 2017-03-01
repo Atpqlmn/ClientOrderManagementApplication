@@ -13,7 +13,7 @@ $(document).ready(function () {
  * @param {String} [sortTerm="default_orders_sort"]
  * */
 function renderOrdersPage(url, rendersFirstTime, sortTerm) {
-    console.log(rendersFirstTime);
+    // console.log(rendersFirstTime);
     var tableBodyId = 'orders_body_results';
     if (sortTerm === undefined) {
         sortTerm = "default_orders_sort";
